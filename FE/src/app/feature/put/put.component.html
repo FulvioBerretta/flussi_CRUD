@@ -1,0 +1,32 @@
+<form [formGroup]="form"  class="container" style = "display: flex; gap: 10px; height: 300px; width: 300px;">
+    <mat-form-field>
+        <mat-label>Id</mat-label>
+        <input  type="number"
+                matInput
+                formControlName = "id"
+                name="id"
+                placeholder="Id"
+                required
+                min="1"
+                >
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Name</mat-label>
+        <input
+                matInput
+                formControlName = "name"
+                name="name"
+                placeholder="Name"
+                required >
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Last Name</mat-label>
+        <input
+                matInput
+                formControlName="lastName"
+                name="lastName"
+                placeholder="last name"
+                required >
+    </mat-form-field>
+    <button mat-raised-button id="signUp-btn" type="submit"  style="padding: 10px; margin-top: 15px;" (click)="updateData()">Modifica</button>
+</form>

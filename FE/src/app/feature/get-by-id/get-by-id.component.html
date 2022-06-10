@@ -1,0 +1,18 @@
+<form [formGroup]="form"  class="container" style = "display: flex; gap: 10px; height: 300px; width: 300px;">
+<mat-form-field>
+    <mat-label>id</mat-label>
+    <input
+            matInput
+            formControlName = "id"
+            name="id"
+            placeholder="Type a id"
+            required
+            type="number"
+            min="1"
+            />
+</mat-form-field>
+    <p>{{element?.firstName}}</p>
+    <p>{{element?.firstName}}</p>
+<button mat-raised-button id="signUp-btn" type="submit"  style="padding: 10px; margin-top: 15px;" (click)="getData()">Cerca</button>
+</form>
+

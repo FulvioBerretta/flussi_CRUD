@@ -1,0 +1,14 @@
+<form [formGroup]="form"  class="container" style = "display: flex; gap: 10px; height: 300px; width: 300px;">
+    <mat-form-field>
+        <mat-label>Id</mat-label>
+        <input
+                matInput
+                formControlName = "id"
+                name="id"
+                placeholder="Id"
+                required >
+    </mat-form-field>
+
+    <button mat-raised-button id="signUp-btn" type="submit"  style="padding: 10px; margin-top: 15px;" (click)="deleteData()">Elimina</button>
+</form>
+

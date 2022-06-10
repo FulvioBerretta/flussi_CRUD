@@ -1,0 +1,8 @@
+<div class="header">
+    <app-button submit = "get-all" class="header-button" [innerText]="getAll" (routerEvent)="goToGetAll($event)" ></app-button>
+    <app-button  submit = "get-by-id" class="header-button" [innerText]="getById" (routerEvent)="goToGetById($event)"  ></app-button>
+    <app-button  submit = "post"  class="header-button" [innerText]="post" (routerEvent)="goToPost($event)"></app-button>
+    <app-button submit = "put"  class="header-button" [innerText]="put" (routerEvent)="goToPut($event)"></app-button>
+    <app-button submit = "delete"  class="header-button" [innerText]="delete" (routerEvent)="goToDelete($event)"></app-button>
+</div>
+
